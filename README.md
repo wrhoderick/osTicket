@@ -43,49 +43,53 @@ https://drive.google.com/drive/u/1/folders/1APMfNyfNzcxZC6EzdaNfdZsUwxWYChf6
 <img src="https://i.imgur.com/jaGfdKC.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 
 4. Create a directory in C drive: `C:\PHP`.
-   - Download PHP 7.3.8 (php-7.3.8-nts-Win32-VC15-x86.zip) and unzip its contents into `C:\PHP`.
-   - Download and install VC_redist.x86.exe.
+<img src="https://i.imgur.com/E222253.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 
-5. Download and install MySQL 5.5.62 (mysql-5.5.62-win32.msi).
+   - Download PHP 7.3.8 (php-7.3.8-nts-Win32-VC15-x86.zip) and unzip its contents into `C:\PHP`.
+<img src="https://i.imgur.com/B0zej1i.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+   - Download and install VC_redist.x86.exe.
+<img src="https://i.imgur.com/I9sA5tt.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+
+6. Download and install MySQL 5.5.62 (mysql-5.5.62-win32.msi).
    - Select Typical Setup.
    - Launch Configuration Wizard (after install).
    - Choose Standard Configuration.
    - Set a password, e.g., "Password1."
 
-6. Open IIS as an Admin, click on PHP Manager, and register PHP from within IIS.
+7. Open IIS as an Admin, click on PHP Manager, and register PHP from within IIS.
 
-7. Reload IIS (Stop and Start the server).
+8. Reload IIS (Stop and Start the server).
 
-8. **Install osTicket v1.15.8:**
+9. **Install osTicket v1.15.8:**
    - Download osTicket, extract, and copy the "upload" folder to `c:\inetpub\wwwroot`.
    - Rename "upload" to "osTicket."
    - Reload IIS.
 
-9. Enable the following PHP extensions in PHP Manager:
+10. Enable the following PHP extensions in PHP Manager:
    - php_imap.dll
    - php_intl.dll
    - php_opcache.dll
    - Refresh the osTicket site in your browser.
 
-10. Rename: `ost-config.php` from `C:\inetpub\wwwroot\osTicket\include\ost-sampleconfig.php` to `C:\inetpub\wwwroot\osTicket\include\ost-config.php`.
+11. Rename: `ost-config.php` from `C:\inetpub\wwwroot\osTicket\include\ost-sampleconfig.php` to `C:\inetpub\wwwroot\osTicket\include\ost-config.php`.
 
-11. **Assign Permissions to `ost-config.php`:**
+12. **Assign Permissions to `ost-config.php`:**
     - Right-click on `ost-config.php`.
     - Click on Properties > Security tab.
     - Disable inheritance.
     - Add "Everyone" and set Basic permissions to "Read."
 
-12. Continue setting up osTicket in the browser:
+13. Continue setting up osTicket in the browser:
     - Name: Helpdesk.
     - Default email (receives email from customers).
 
-13. **Download and Install HeidiSQL:**
+14. **Download and Install HeidiSQL:**
     - Open HeidiSQL.
     - Create a new session (root/Password1).
     - Connect to the session.
     - Create a database called "osTicket."
 
-14. Continue setting up osTicket in the browser:
+15. Continue setting up osTicket in the browser:
     - MySQL Database: osTicket
     - MySQL Username: root
     - MySQL Password: Password1
