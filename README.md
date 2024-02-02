@@ -51,21 +51,26 @@ https://drive.google.com/drive/u/1/folders/1APMfNyfNzcxZC6EzdaNfdZsUwxWYChf6
 <img src="https://i.imgur.com/I9sA5tt.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 
 6. Download and install MySQL 5.5.62 (mysql-5.5.62-win32.msi).
+<img src="https://i.imgur.com/XoY3B0S.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
    - Select Typical Setup.
+<img src="https://i.imgur.com/sjgU8XX.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
    - Launch Configuration Wizard (after install).
+<img src="https://i.imgur.com/B0EnwdY.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
    - Choose Standard Configuration.
+<img src="https://i.imgur.com/xD4zLaE.png" height="30%" width="30%" alt="Disk Sanitization Steps"/>
    - Set a password, e.g., "Password1."
+<img src="https://i.imgur.com/aSEv8Ia.png" height="30%" width="30%" alt="Disk Sanitization Steps"/>
 
-7. Open IIS as an Admin, click on PHP Manager, and register PHP from within IIS.
+8. Open IIS as an Admin, click on PHP Manager, and register PHP from within IIS.
 
-8. Reload IIS (Stop and Start the server).
+9. Reload IIS (Stop and Start the server).
 
-9. **Install osTicket v1.15.8:**
+10. **Install osTicket v1.15.8:**
    - Download osTicket, extract, and copy the "upload" folder to `c:\inetpub\wwwroot`.
    - Rename "upload" to "osTicket."
    - Reload IIS.
 
-10. Enable the following PHP extensions in PHP Manager:
+11. Enable the following PHP extensions in PHP Manager:
    - php_imap.dll
    - php_intl.dll
    - php_opcache.dll
