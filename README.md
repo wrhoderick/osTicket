@@ -88,35 +88,43 @@ https://drive.google.com/drive/u/1/folders/1APMfNyfNzcxZC6EzdaNfdZsUwxWYChf6
 
 12. **Assign Permissions to `ost-config.php`:**
     - Right-click on `ost-config.php`.
-<img src="https://i.imgur.com/ouQl2tD.png" height="80%" width="80%" alt="Disk Sanitization Steps"/> 
+<img src="https://i.imgur.com/VDG9mcN.png" height="80%" width="80%" alt="Disk Sanitization Steps"/> 
 
     - Click on Properties > Security tab.
 <img src="https://i.imgur.com/l4dPnYY.png" height="80%" width="80%" alt="Disk Sanitization Steps"/> 
 
     - Disable inheritance.
-<img src="https://i.imgur.com/5S7QUbH.png" height="80%" width="80%" alt="Disk Sanitization Steps"/> 
-<img src="https://i.imgur.com/oBJE3In.png" height="80%" width="80%" alt="Disk Sanitization Steps"/> 
+<img src="https://i.imgur.com/5S7QUbH.png" height="50%" width="50%" alt="Disk Sanitization Steps"/> 
+<img src="https://i.imgur.com/oBJE3In.png" height="50%" width="50%" alt="Disk Sanitization Steps"/> 
  
-    - Add "Everyone" and set Basic permissions to "Read."
-<img src="https://i.imgur.com/fQL4zvk.png" height="80%" width="80%" alt="Disk Sanitization Steps"/> 
-<img src="https://i.imgur.com/bphc0S0.png" height="80%" width="80%" alt="Disk Sanitization Steps"/> 
-
+    - Click "Select a principal"
+<img src="https://i.imgur.com/bphc0S0.png" height="50%" width="50%" alt="Disk Sanitization Steps"/>   
+    - Add "Everyone" and enable all permissions.
+<img src="https://i.imgur.com/fQL4zvk.png" height="50%" width="50%" alt="Disk Sanitization Steps"/> 
+<img src="https://i.imgur.com/LiyUkqX.png" height="50%" width="50%" alt="Disk Sanitization Steps"/> 
 
 14. Continue setting up osTicket in the browser:
-    - Name: Helpdesk.
-    - Default email (receives email from customers).
+<img src="https://i.imgur.com/V7U5Qf6.png" height="80%" width="80%" alt="Disk Sanitization Steps"/> 
+    - Fill out the information you will be using with osTicket e.g.:Name, Email, Password, etc...
+    - Note: The "Default email" receives emails from customers.
 
-15. **Download and Install HeidiSQL:**
+16. **Download and Install HeidiSQL:**
+<img src="https://i.imgur.com/XoY3B0S.png" height="80%" width="80%" alt="Disk Sanitization Steps"/> 
     - Open HeidiSQL.
     - Create a new session (root/Password1).
+<img src="https://i.imgur.com/x2UcUNf.png" height="40%" width="40%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/m4GueFy.png" height="40%" width="40%" alt="Disk Sanitization Steps"/>
     - Connect to the session.
     - Create a database called "osTicket."
+<img src="https://i.imgur.com/LbILDq3.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/dTadw8u.png" height="50%" width="50%" alt="Disk Sanitization Steps"/>
 
-16. Continue setting up osTicket in the browser:
+18. Continue setting up osTicket in the browser with whatever credentials you used in step 6:
     - MySQL Database: osTicket
     - MySQL Username: root
     - MySQL Password: Password1
     - Click "Install Now!"
+<img src="https://i.imgur.com/5LljZ53.png" height="50%" width="50%" alt="Disk Sanitization Steps"/>
 
 Congratulations! osTicket should now be installed successfully. Browse to your help desk login page: [http://localhost/osTicket/scp/login.php](http://localhost/osTicket/scp/login.php).
 
@@ -125,10 +133,7 @@ End Users osTicket URL: [http://localhost/osTicket/](http://localhost/osTicket/)
 ## Cleanup
 
 - Delete: `C:\inetpub\wwwroot\osTicket\setup`.
-- Set Permissions to "Read" only: `C:\inetpub\wwwroot\osTicket\include\ost-config.php`.
-
-## Notes
-
-- Browse to your help desk login page: [http://localhost/osTicket/scp/login.php](http://localhost/osTicket/scp/login.php).
-- End Users osTicket URL: [http://localhost/osTicket/](http://localhost/osTicket/).
+<img src="https://i.imgur.com/28uHahl.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+- Set Permissions to "Read" only: `C:\inetpub\wwwroot\osTicket\include\ost-config.php`. (you will essentially follow the same steps from step 12)
+<img src="https://i.imgur.com/JpjjEUH.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 ```
