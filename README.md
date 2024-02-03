@@ -1,3 +1,8 @@
+<p align="center">
+<img src="https://i.imgur.com/vhsLFgs.png" alt="osTicket Logo"/>
+</p>
+
+
 # osTicket Installation Guide
 
 This guide outlines the step-by-step process to install the open-source help desk ticketing system, osTicket. Follow these instructions to set up all the necessary software components for using osTicket in an IT environment.
