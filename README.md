@@ -62,39 +62,57 @@ https://drive.google.com/drive/u/1/folders/1APMfNyfNzcxZC6EzdaNfdZsUwxWYChf6
 <img src="https://i.imgur.com/aSEv8Ia.png" height="30%" width="30%" alt="Disk Sanitization Steps"/>
 
 8. Open IIS as an Admin, click on PHP Manager, and register PHP from within IIS.
+<img src="https://i.imgur.com/8FPpKEY.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/Ucn9jPI.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/mAgOQfA.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 
 9. Reload IIS (Stop and Start the server).
+<img src="https://i.imgur.com/k1aFh9K.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 
 10. **Install osTicket v1.15.8:**
    - Download osTicket, extract, and copy the "upload" folder to `c:\inetpub\wwwroot`.
+<img src="https://i.imgur.com/nOw8MbT.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
    - Rename "upload" to "osTicket."
+<img src="https://i.imgur.com/T7afzC2.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
    - Reload IIS.
 
 11. Enable the following PHP extensions in PHP Manager:
    - php_imap.dll
    - php_intl.dll
    - php_opcache.dll
+<img src="https://i.imgur.com/pKhB6ZL.png" height="80%" width="80%" alt="Disk Sanitization Steps"/> 
    - Refresh the osTicket site in your browser.
 
 11. Rename: `ost-config.php` from `C:\inetpub\wwwroot\osTicket\include\ost-sampleconfig.php` to `C:\inetpub\wwwroot\osTicket\include\ost-config.php`.
+<img src="https://i.imgur.com/ouQl2tD.png" height="80%" width="80%" alt="Disk Sanitization Steps"/> 
 
 12. **Assign Permissions to `ost-config.php`:**
     - Right-click on `ost-config.php`.
-    - Click on Properties > Security tab.
-    - Disable inheritance.
-    - Add "Everyone" and set Basic permissions to "Read."
+<img src="https://i.imgur.com/ouQl2tD.png" height="80%" width="80%" alt="Disk Sanitization Steps"/> 
 
-13. Continue setting up osTicket in the browser:
+    - Click on Properties > Security tab.
+<img src="https://i.imgur.com/l4dPnYY.png" height="80%" width="80%" alt="Disk Sanitization Steps"/> 
+
+    - Disable inheritance.
+<img src="https://i.imgur.com/5S7QUbH.png" height="80%" width="80%" alt="Disk Sanitization Steps"/> 
+<img src="https://i.imgur.com/oBJE3In.png" height="80%" width="80%" alt="Disk Sanitization Steps"/> 
+ 
+    - Add "Everyone" and set Basic permissions to "Read."
+<img src="https://i.imgur.com/fQL4zvk.png" height="80%" width="80%" alt="Disk Sanitization Steps"/> 
+<img src="https://i.imgur.com/bphc0S0.png" height="80%" width="80%" alt="Disk Sanitization Steps"/> 
+
+
+14. Continue setting up osTicket in the browser:
     - Name: Helpdesk.
     - Default email (receives email from customers).
 
-14. **Download and Install HeidiSQL:**
+15. **Download and Install HeidiSQL:**
     - Open HeidiSQL.
     - Create a new session (root/Password1).
     - Connect to the session.
     - Create a database called "osTicket."
 
-15. Continue setting up osTicket in the browser:
+16. Continue setting up osTicket in the browser:
     - MySQL Database: osTicket
     - MySQL Username: root
     - MySQL Password: Password1
